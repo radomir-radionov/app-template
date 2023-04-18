@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { HashRouter } from 'react-router-dom';
-import { Loader, ToastList } from 'components';
-import { Modal } from 'modules';
 import store from 'store';
 
 import App from './App';
@@ -17,9 +15,6 @@ root.render(
       <Provider store={store}>
         <App />
         <GlobalStyles />
-        <Modal />
-        <ToastList />
-        <Loader />
       </Provider>
     </HashRouter>
   </React.StrictMode>
